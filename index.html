@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manupulation</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="fw-medium text-center text-primary mb-5">Book List</h1>
+    <div class=" text-center">
+        <h6>Your Book Name</h6>
+        <input type="text" placeholder="enter the book name" id="title"  class="input">
+
+        <h6 class="mt-3">Author Name</h6>
+        <input class="mb-3 input" type="text" placeholder="enter the book name" id="author">
+
+        <h6>Year</h6>
+        <input type="text" placeholder="enter the book name" id="year" class="input"> <br>
+        
+        <div class="d-grid gap-2">
+            <button id="btn" class="btn btn-primary w-50 mx-auto mt-3" type="submit">submit</button>
+          </div>
+    </div>
+
+    <div class="text-danger text-center fs-2 " id="error"></div>
+    <!-- table -->
+
+    <table id="table"  class="table table-dark table-striped ">
+        <thead>
+            <tr>
+              
+                <th scope="col">Name</th>
+                <th scope="col">Author</th>
+                <th scope="col">Year</th>
+              </tr>
+        </thead>
+        <tbody id="tableId">
+
+        </tbody>
+
+
+      </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
