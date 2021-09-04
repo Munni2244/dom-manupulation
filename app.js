@@ -8,7 +8,7 @@ const errorMsg=document.getElementById('error');
 
 button.addEventListener('click', () =>{
   
-if(inputName.value=='' && author.value=='' && year.value==''){
+if(inputName.value=='' || author.value=='' || year.value==''){
     errorMsg.innerText='Please enter your value';
 
 }
